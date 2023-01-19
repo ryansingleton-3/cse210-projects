@@ -42,3 +42,5 @@ class Program
         DisplayResult(name, numberSquared);
     }
 }
+
+ 
