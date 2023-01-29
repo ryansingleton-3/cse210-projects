@@ -4,7 +4,7 @@ public class Journal
 {
     // attributes: List of all entries
     public List<Entry> _entries = new List<Entry>();
-    
+
     public Journal()
     {
 
@@ -15,7 +15,7 @@ public class Journal
     {
         // File.CreateText(fileName);
         File.AppendAllText(fileName, fullEntryString + Environment.NewLine);
-                     
+
     }
     public void ShowAllEntries(string fileString)
     {
@@ -40,8 +40,8 @@ public class Journal
         Console.Write("What is the name of the file you would like to load?");
         string newFileName = Console.ReadLine();
         return newFileName;
-        
-        
+
+
     }
 
 }

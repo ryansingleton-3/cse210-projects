@@ -3,27 +3,27 @@ using System;
 class Program
 {
 
-    
+
     static void Main(string[] args)
     {
-         string cwd = Directory.GetCurrentDirectory();
-         string fileName = "journal.txt";
-         string fileString = $"{cwd}/{fileName}";
-         Console.WriteLine(fileName);
-         Console.WriteLine("Welcome to the Journal Program!");
-         int userInput = -1;
-         Journal journal = new Journal();
+        string cwd = Directory.GetCurrentDirectory();
+        string fileName = "journal.txt";
+        string fileString = $"{cwd}/{fileName}";
+        Console.WriteLine(fileName);
+        Console.WriteLine("Welcome to the Journal Program!");
+        int userInput = -1;
+        Journal journal = new Journal();
 
         while (userInput != 5)
         {
-         Console.WriteLine("Please select one of the following choices: ");
-         Console.WriteLine("1. Write");
-         Console.WriteLine("2. Display");
-         Console.WriteLine("3. Load");
-         Console.WriteLine("4. Save");
-         Console.WriteLine("5. Quit");
-         string userInputStr = Console.ReadLine();
-         userInput = int.Parse(userInputStr);
+            Console.WriteLine("Please select one of the following choices: ");
+            Console.WriteLine("1. Write");
+            Console.WriteLine("2. Display");
+            Console.WriteLine("3. Load");
+            Console.WriteLine("4. Save");
+            Console.WriteLine("5. Quit");
+            string userInputStr = Console.ReadLine();
+            userInput = int.Parse(userInputStr);
 
             if (userInput == 1)
             {
@@ -33,7 +33,7 @@ class Program
                 entry._entryText = entryText;
                 string fullEntryString = entry.DisplayFullEntry(_entryPrompt);
                 journal.AddEntry(fullEntryString, fileString, fileName);
-                
+
 
             }
             if (userInput == 2)
@@ -50,21 +50,9 @@ class Program
                 fileName = journal.Save(fileName);
                 fileString = $"{cwd}/{fileName}";
             }
-            
+
         }
-        
+
 
     }
 }
-
-// class for entries and a class for prompts
-// display method for each class
-// entry attributes - str date/time, str entry text
-// prompt attributes - str prompt text
-
-// menu / user interface
-// journal
-// prompt
-// entries class 
-// save and load functions
-// maybe use json to store and retrieve objects
