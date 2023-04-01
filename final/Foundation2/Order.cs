@@ -14,15 +14,15 @@ class Order
 
     }
 
-    public void calculateCost()
+    public void CalculateCost()
     {
         foreach (Item item in _items)
         {
-            _subtotal = _subtotal + item.getTotalPrice();
+            _subtotal = _subtotal + item.GetTotalPrice();
         }
         _totalCost = _subtotal;
         Console.WriteLine($"Cost without shipping: ${_totalCost}");
-        calculateShipping();
+        CalculateShipping();
         _totalCost = _totalCost + _shippingCost;
         Console.WriteLine($"Shipping charge: ${_shippingCost}");
         Console.WriteLine($"Total Cost: ${_totalCost}");
@@ -30,9 +30,9 @@ class Order
     }
 
 
-    public void calculateShipping() 
+    public void CalculateShipping() 
     {
-        if (Customer.getUSA() == true)
+        if (Customer.GetUSA() == true)
         {
             _shippingCost = 5;
         }
@@ -43,30 +43,30 @@ class Order
     }
 
 
-    public void setCustomer(Customer customer)
+    public void SetCustomer(Customer customer)
     {
         Customer = customer;
     }
 
-    public void displayShippingLabel()
+    public void DisplayShippingLabel()
     {
         Console.WriteLine("Shipping Label");
-        Console.WriteLine($"Shipping Address: {Customer.getAddress()}");
+        Console.WriteLine($"Shipping Address: {Customer.GetAddress()}");
     }
 
-    public void displayPackingSlip()
+    public void DisplayPackingSlip()
     {
-        Console.WriteLine($"Customer Name: {Customer.getCustName()}");
+        Console.WriteLine($"Customer Name: {Customer.GetCustName()}");
         Console.WriteLine("Packing Label");
         Console.WriteLine("");
         foreach (Item item in _items)
         {
-            item.displayItem();
+            item.DisplayItem();
             Console.WriteLine("");
         }
     }
 
-    public void addItem(Item item)
+    public void AddItem(Item item)
     {
         _items.Add(item);
     }

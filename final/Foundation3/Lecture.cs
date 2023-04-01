@@ -15,7 +15,7 @@ class Lecture : Event
         _capacity = capacity;
     }
 
-    public void displayFullDeets() 
+    public void DisplayFullDeets() 
     {
         Console.WriteLine("Full Details:");
         Console.WriteLine($"Event Type: {_type}");
@@ -23,7 +23,7 @@ class Lecture : Event
         Console.WriteLine(_description);
         Console.WriteLine(_date);
         Console.WriteLine(_time);
-        Console.WriteLine(_address.getAddress());
+        Console.WriteLine(_address.GetAddress());
         Console.WriteLine($"Speaker: {_speaker}");
         Console.WriteLine($"Capacity: {_capacity}");
         

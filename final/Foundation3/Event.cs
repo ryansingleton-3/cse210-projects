@@ -23,18 +23,18 @@ class Event
         _type = type;
     }
 
-    public void setAddress(Address address)
+    public void SetAddress(Address address)
     {
         _address = address;
     }
 
 
-    public string getAddress()
+    public string GetAddress()
     {
-        return _address.getAddress();
+        return _address.GetAddress();
     }
 
-    public void displayShortDeets()
+    public void DisplayShortDeets()
     {
         Console.WriteLine("Short Details:");
         Console.WriteLine($"Event Type: {_type}");
@@ -45,14 +45,14 @@ class Event
 
     }
 
-    public void displayStandardDeets()
+    public void DisplayStandardDeets()
     {
         Console.WriteLine("Standard Details:");
         Console.WriteLine(_title);
         Console.WriteLine(_description);
         Console.WriteLine(_date);
         Console.WriteLine(_time);
-        Console.WriteLine(_address.getAddress());
+        Console.WriteLine(_address.GetAddress());
         Console.WriteLine("");
 
     }

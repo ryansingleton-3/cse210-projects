@@ -9,7 +9,7 @@ class Cycling : Activity
         _duration = duration;
         _speed = speed;
     }
-    public override string getSummary()
+    public override string GetSummary()
     {
         _pace = _duration / _speed;
         _distance = _speed / 60 * _duration;

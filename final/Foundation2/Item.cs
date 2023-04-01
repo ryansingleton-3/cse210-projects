@@ -22,7 +22,7 @@ class Item
         _totalPrice = itemPrice * quantity;
     }
 
-    public void displayItem()
+    public void DisplayItem()
     {
         Console.WriteLine($"Item: {_itemName}");
         Console.WriteLine($"Item Price: ${_itemPrice}");
@@ -31,7 +31,7 @@ class Item
         
     }
 
-    public int getTotalPrice()
+    public int GetTotalPrice()
     {
         return _totalPrice;
     }

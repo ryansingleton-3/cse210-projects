@@ -18,7 +18,7 @@ class Reception : Event
         _type = type;
     }
 
-    public void addEmails(string [] emails)
+    public void AddEmails(string [] emails)
     {
         foreach(string email in emails)
         {
@@ -26,13 +26,13 @@ class Reception : Event
         } 
     }
 
-    public void getEmails()
+    public void GetEmails()
     {
         foreach (string email in _emails)
         Console.WriteLine(email);
     }
 
-    public void displayFullDeets() 
+    public void DisplayFullDeets() 
     {
         Console.WriteLine("Full Details:");
         Console.WriteLine($"Event Type: {_type}");
@@ -40,9 +40,9 @@ class Reception : Event
         Console.WriteLine(_description);
         Console.WriteLine(_date);
         Console.WriteLine(_time);
-        Console.WriteLine(_address.getAddress());
+        Console.WriteLine(_address.GetAddress());
         Console.WriteLine($"Full email list of those that have RSVP'd:");
-        getEmails();
+        GetEmails();
     }
 
    

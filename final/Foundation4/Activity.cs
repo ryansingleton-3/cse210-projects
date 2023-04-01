@@ -15,7 +15,7 @@ class Activity
         _duration = duration;
     }
 
-    public virtual string getSummary()
+    public virtual string GetSummary()
     {
         string summary = ($"{_date} {_type} ({_duration} minutes) - Distance {_distance} miles, Speed {_speed} mph, Pace: {_pace} min per mile");
         return summary;

@@ -14,7 +14,7 @@ public Gathering(string weather, string title, string description, string date, 
     _weather = weather;
 }
 
-public void displayFullDeets() 
+public void DisplayFullDeets() 
     {
         Console.WriteLine("Full Details:");
         Console.WriteLine($"Event Type: {_type}");
@@ -22,7 +22,7 @@ public void displayFullDeets()
         Console.WriteLine(_description);
         Console.WriteLine(_date);
         Console.WriteLine(_time);
-        Console.WriteLine(_address.getAddress());
+        Console.WriteLine(_address.GetAddress());
         Console.WriteLine($"Weather Forecast: {_weather}");
         
         

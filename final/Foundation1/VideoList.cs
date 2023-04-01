@@ -8,7 +8,7 @@ class VideoList
 
     }
 
-    public void showVideoList()
+    public void ShowVideoList()
     {
         Console.WriteLine("----------------------------------------------------");
         Console.WriteLine("Videos");
@@ -18,9 +18,9 @@ class VideoList
             Console.WriteLine($"Title: {video._title}");
             Console.WriteLine($"Author: {video._author}");
             Console.WriteLine($"Length: {video._length} seconds");
-            int numComments = video.getNumComments();
+            int numComments = video.GetNumComments();
             Console.WriteLine($"Comments: ({numComments} total)");
-            video.showComments();
+            video.ShowComments();
             Console.WriteLine("----------------------------------------------------");
         }
     }

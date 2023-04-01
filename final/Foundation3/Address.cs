@@ -9,7 +9,7 @@ class Address
         _address = address;
     
     }
-    public string getAddress()
+    public string GetAddress()
     {
         return _address;
     }

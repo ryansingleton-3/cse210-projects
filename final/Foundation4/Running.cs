@@ -10,7 +10,7 @@ class Running : Activity
         _duration = duration;
         _distance = distance;
     }
-    public override string getSummary()
+    public override string GetSummary()
     {
         _pace = _duration / _distance;
         _speed = 60 / _pace;

@@ -15,7 +15,7 @@ class Activities
         Console.WriteLine("");
         foreach (Activity activity in _activities)
         {
-            Console.WriteLine(activity.getSummary());
+            Console.WriteLine(activity.GetSummary());
             Console.WriteLine("----------------------------------------------------");
         }
     }

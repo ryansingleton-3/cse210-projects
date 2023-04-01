@@ -18,25 +18,25 @@ class Customer
 
     }
 
-    public void setAddress(Address address)
+    public void SetAddress(Address address)
     {
         _customerAddress = address;
     }
 
 
-    public string getAddress()
+    public string GetAddress()
     {
-        return _customerAddress.getAddress();
+        return _customerAddress.GetAddress();
     }
     
-    public string getCustName()
+    public string GetCustName()
     {
         return _customerName;
     }
 
-    public bool getUSA()
+    public bool GetUSA()
     {
-        return _customerAddress.getUSA();
+        return _customerAddress.GetUSA();
     }
 
     

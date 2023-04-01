@@ -11,7 +11,7 @@ class Swimming : Activity
         _type = type;
         _duration = duration;
     }
-    public override string getSummary()
+    public override string GetSummary()
     {
         _distance = _laps * 50 / 1000;
         _pace = _duration / _distance;

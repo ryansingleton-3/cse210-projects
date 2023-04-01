@@ -16,24 +16,24 @@ class Address
         _isUSA = isUSA;
     }
 
-    public string getAddress()
+    public string GetAddress()
     {
         return _address;
     }
 
-    public void setAddress()
+    public void SetAddress()
     {
         Console.WriteLine("Please provide the address" );
         string userResp = Console.ReadLine();
         _address = userResp;
     }
 
-    public void setUSA(bool isUSA)
+    public void SetUSA(bool isUSA)
     {
         _isUSA = isUSA;
     }
 
-    public bool getUSA()
+    public bool GetUSA()
     {
         return _isUSA;
 

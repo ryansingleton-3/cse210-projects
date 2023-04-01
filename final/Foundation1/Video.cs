@@ -20,7 +20,7 @@ class Video
         _length = length;
     }
 
-    public void showComments()
+    public void ShowComments()
     {
         foreach (Comment comment in _comments)
         {
@@ -29,7 +29,7 @@ class Video
         }
     }
 
-    public int getNumComments()
+    public int GetNumComments()
     {
         return _comments.Count;
     }
